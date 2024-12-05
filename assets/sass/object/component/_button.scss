@@ -1,0 +1,167 @@
+@use "../../foundation/variable" as v;
+@use "../../foundation/mixin" as m;
+
+
+
+
+.p-button__wrap {
+  margin: 0 auto;
+  width: 100%;
+  text-align: center;
+  padding-top: 80px;
+
+  @include m.mq(sp){
+     padding-top: 0;
+
+  }
+
+  p {
+    margin-bottom: 50px;
+    color: v.$bg-red;
+    font-size: 18px;
+
+    @include m.mq(sp){
+       font-size: 15px;
+       margin-bottom: 35px;
+    }
+
+  }
+}
+
+.fv .p-button__wrap {
+
+  @include m.mq(sp) {
+    position: absolute;
+    bottom: 16%;
+    width: 90%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+  }
+}
+
+.shikumi .p-button__wrap {
+  padding-top: 60px;
+}
+
+.reason .p-button__wrap,
+.p-campaign .p-button__wrap,
+.p-coupon .p-button__wrap {
+  padding-top: 56px;
+
+  @include m.mq(sp){
+     padding-top: 40px;
+  }
+}
+
+.p-coupon .p-button__wrap{
+  @include m.mq(sp){
+     padding-top: 24px;
+  }
+}
+
+.p-low-price .p-button__wrap {
+  padding-top: 44px;
+}
+
+.p-interview .p-button__wrap {
+  padding-top: 50px;
+
+  @include m.mq(sp){
+     padding-top: 24px;
+  }
+}
+
+.mt56.p-button__wrap {
+  padding-top: 56px;
+
+  @include m.mq(sp){
+     padding: 40px 15px;
+
+  }
+}
+
+
+.first .c-button{
+
+  @include m.mq(sp){
+        position: absolute;
+          bottom: 23%;
+          left: 50%;
+          transform: translateX(-50%);
+          width: 90%;
+          display: block;
+          margin: 0 auto;
+  }
+}
+
+.c-button {
+  position: relative;
+  background-color: v.$bg-red;
+  margin: 0 auto;
+  display: block;
+  padding: 27px 35px;
+  width: 544px;
+  border-radius: 10px;
+  box-shadow: 0px 5px 0px #AD050D;
+
+  @include m.mq(sp){
+     padding: 24px 0 20px;
+     width: 100%;
+  }
+
+  &::before {
+    position: absolute;
+    content: 'メールアドレスでかんたん登録';
+    background-color: #fff;
+    padding: 5px 20px;
+    border-radius: 99px;
+    top: -25%;
+    font-size: 18px;
+    font-weight: bold;
+    color: v.$bg-red;
+    border: 2px solid v.$bg-red;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 252px;
+
+    @include m.mq(sp){
+       font-size: 14px;
+    }
+
+
+
+  }
+
+
+
+  &::after {
+    position: absolute;
+    content: "";
+    background-image: url(../img/button-after.png);
+    width: 30px;
+    height: 30px;
+    background-size: cover;
+    right: 4%;
+
+    @include m.mq(sp){
+      width: 26px;
+      height: 26px;
+      right: 5%;
+
+    }
+
+  }
+
+  a {
+    color: white;
+    font-size: 26px;
+    font-weight: bold;
+    position: relative;
+
+    @include m.mq(sp) {
+      font-size: 18px;
+    }
+
+  }
+}

@@ -1,0 +1,125 @@
+@use "../../foundation/variable" as v;
+@use "../../foundation/mixin" as m;
+
+.position{
+  position: absolute;
+  color: v.$bg-red;
+  background-color: #fff;
+  font-size: 20px;
+  font-weight: bold;
+  border: 3px solid v.$bg-red;
+  padding: 15px 50px;
+  border-radius: 30px;
+  top: -9%;
+  left: 50%;
+  transform: translateX(-50%);
+
+  @include m.mq(sp){
+     padding: 10px 20px;
+     width: 60%;
+     top: -3%;
+     text-align: center;
+  }
+
+}
+
+.c-voice{
+
+  &__wrap{
+    padding: 60px 60px 40px;
+    border: 3px solid v.$bg-red;
+    border-radius: 10px;
+    margin: 80px 45px 0 ;
+    background-color: #fff;
+    position: relative;
+
+    @include m.mq(tab) {
+      padding: 60px 10px 40px;
+
+    }
+
+    @include m.mq(sp){
+       margin: 46px auto 0 ;
+       width: 100%;
+       padding: 40px 15px;
+
+    }
+
+
+
+  }
+
+  &__flex{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    @include m.mq(sp){
+       display: block;
+    }
+  }
+
+  &__left{
+
+    width: 30%;
+    max-width: 200px;
+    margin-right: 15px;
+    text-align: center;
+
+    @include m.mq(sp){
+       width: 100%;
+       margin: 0 auto;
+    }
+
+    p{
+      font-size: 20px;
+      font-weight: bold;
+      line-height: 0.8;
+      margin-top: 10px;
+
+      &:last-child{
+        font-weight: normal;
+        margin-top: 10px;
+      }
+    }
+  }
+
+  &__right{
+    width: 70%;
+    text-align: left;
+    max-width: 580px;
+
+    @include m.mq(sp){
+       width: 100%;
+    }
+
+  }
+
+  &__title{
+    font-size: 22px;
+    font-weight: bold;
+    color: v.$bg-red;
+
+    @include m.mq(sp){
+       font-size: 20px;
+       margin-top: 15px;
+    }
+  }
+
+  &__text{
+    font-size: 18px;
+
+    p{
+
+      margin-top: 15px;
+      line-height: 1.5;
+
+      span{
+        font-weight: bold;
+      }
+    }
+
+
+  }
+
+}

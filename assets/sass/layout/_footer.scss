@@ -1,0 +1,96 @@
+@use "../foundation/variable" as v;
+@use "../foundation/mixin" as m;
+
+
+footer{
+
+  padding: 24px;
+  background-color: #D2D2D2;
+  text-align: center;
+}
+
+.footer-flex{
+  display: flex;
+  justify-content: center;
+  font-size: 20px;
+
+  @include m.mq(sp){
+     display: block;
+     font-size: 16px;
+     padding: 0;
+     margin-top: 0;
+  }
+
+  li{
+    margin-right: 25px;
+
+    &:first-child{
+
+      @include m.mq(sp){
+         margin-top: 0;
+      }
+    }
+    @include m.mq(sp){
+       margin-right: 0;
+       margin-top: 20px;
+
+
+    }
+
+    a{
+      text-decoration: none;
+      color: black;
+    }
+  }
+
+  p{
+    font-size: 20px;
+  }
+}
+
+
+// to-top
+
+// #page-top a {
+//   display: flex;
+//   justify-content: center;
+//   align-items: center;
+//   background: #942D2F;
+//   border-radius: 5px;
+//   width: 60px;
+//   height: 60px;
+//   color: #fff;
+//   text-align: center;
+//   text-transform: uppercase;
+//   text-decoration: none;
+//   font-size: 0.6rem;
+//   transition: all 0.3s;
+// }
+
+// #page-top a:hover {
+//   background: #777;
+// }
+
+/*リンクを右下に固定*/
+.pagetop {
+  position: fixed;
+  right: 3%;
+  bottom: 10%;
+  z-index: 9999;
+  /*はじめは非表示*/
+  opacity: 0;
+  transform: translateY(100px);
+  width: 50px;
+  width: 50px;
+  transition: all 0.5s 0s ease ;
+}
+
+/*リンクを右下に固定*/
+#page-top.show {
+  position: fixed;
+  right: 10px;
+  z-index: 2;
+  /*はじめは非表示*/
+  opacity: 1;
+  transform: translateY(100px);
+}

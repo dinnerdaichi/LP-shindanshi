@@ -1,0 +1,45 @@
+@use './variable' as v;
+@use '../foundation/mixin' as m;
+
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&display=swap');
+
+html{
+  scroll-behavior: smooth;
+}
+
+body{
+  font-family: "Noto Sans JP",
+    serif;
+}
+
+h2{
+  margin: 0;
+}
+
+h3{
+  margin: 0;
+}
+
+p{
+  margin: 0;
+}
+
+li{
+  list-style: none;
+}
+
+.sp{
+  display: none;
+
+  @include m.mq(sp){
+     display: block;
+  }
+}
+
+.pc{
+  display: block;
+
+  @include m.mq(sp){
+     display: none;
+  }
+}

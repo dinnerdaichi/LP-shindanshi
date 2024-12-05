@@ -1,0 +1,91 @@
+@use "../../foundation/variable" as v;
+@use "../../foundation/mixin" as m;
+
+.p-tokuten{
+
+  background-color: #CEE3E1;
+  padding-bottom: 100px;
+
+  @include m.mq(sp){
+     padding-bottom: 40px;
+  }
+
+  &__head{
+    background-image: url(../img/tokuten-bg.png);
+    text-align: center;
+    padding: 80px 0 180px;
+    color: #0B716A;
+      text-shadow: 3px 3px 3px white;
+
+    @include m.mq(sp){
+      background-image: url(../img/tokuten-bg-sp.png);
+      padding: 40px 0 80px;
+
+      }
+    span{
+      font-size: 26px;
+      font-weight: bold;
+
+      color:#0B716A ;
+
+      @include m.mq(sp){
+         font-size: 22px;
+      }
+
+    }
+
+    h3{
+      font-size: 48px;
+      font-weight: bold;
+
+      span{
+        font-size: 60px;
+        font-weight: bold;
+        margin-right: 5px;
+      }
+    }
+  }
+
+  &__flex{
+    display: flex;
+    justify-content: center;
+    margin-top: -12%;
+
+    @include m.mq(sp){
+      display: block;
+      margin-top: -50px;
+    }
+
+
+  }
+
+  &__item{
+    margin-right: 32px;
+
+    @include m.mq(sp){
+       margin-right: 0;
+       margin-top: 16px;
+    }
+
+    &:last-child{
+      margin-right: 0;
+    }
+  }
+
+}
+
+.p-coupon{
+  padding: 80px;
+  text-align: center;
+
+  @include m.mq(sp){
+     padding: 24px 20px;
+  }
+
+  img{
+    width: 100%;
+    max-width: 426px  ;
+  }
+
+
+}

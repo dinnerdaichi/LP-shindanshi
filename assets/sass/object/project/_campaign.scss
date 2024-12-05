@@ -1,0 +1,169 @@
+@use "../../foundation/variable" as v;
+@use "../../foundation/mixin" as m;
+
+.p-campaign{
+
+
+  padding: 80px;
+
+  @include m.mq(sp){
+     padding:40px 0;
+  }
+
+
+  table{
+    width: 100%;
+    // max-width: 800px;
+    margin: 0 auto;
+    margin-top: 40px;
+
+    td{
+      padding: 10px;
+    }
+  }
+}
+
+.redactor-editor table td{
+  @include m.mq(sp){
+     text-align: left;
+  }
+}
+.redactor-editor table td,
+.redactor-editor table th {
+  border: 0 none;
+  padding: 5px;
+  border: 1px solid #ddd;
+  vertical-align: middle;
+
+  @include m.mq(sp){
+     font-size: 12px;
+  }
+}
+
+.curriculum-table .w30{
+
+  @include m.mq(sp){
+     width: 20%;
+  }
+}
+
+.curriculum-table .w20{
+
+  @include m.mq(sp){
+     width: 10%;
+  }
+}
+
+.curriculum-table .w40{
+
+  @include m.mq(sp){
+     width: 20%;
+  }
+}
+
+
+
+
+.p-campaign .red{
+  background-color: red;
+  color: white;
+  padding: 0px 10px;
+  font-size: 14px;
+  margin-bottom: 5px;
+  display: inline-block;
+}
+.p-campaign .font-red{
+  color: red;
+  font-size: 18px;
+  margin-top: 5px;
+  display: inline-block;
+
+}
+
+.p-campaign__head{
+
+  img{
+    width: 90%;
+    display: block;
+    margin: 0 auto;
+  }
+}
+
+
+.p-campaign__img{
+  margin-top: 70px;
+
+  @include m.mq(sp){
+     margin-top: 40px;
+  }
+  img{
+    width: 100%;
+  }
+}
+
+
+// /* 初期状態では非表示 */
+// .curriculum-table {
+//   height: 0;
+//   transition: all 0.3s ease;
+//   /* スムーズなアニメーション */
+// }
+
+// /* 開いた時に表示 */
+// .curriculum-table.is-open {
+//   display: table;
+//   height: 100%;
+// }
+
+// /* ボタンのスタイル */
+// .accordion-toggle {
+//   display: inline-block;
+//   padding: 10px 20px;
+//   background-color: #f5f5f5;
+//   color: #333;
+//   border: 1px solid #ddd;
+//   border-radius: 5px;
+//   cursor: pointer;
+//   text-align: center;
+//   user-select: none;
+//   /* 選択不可 */
+// }
+
+// .accordion-toggle:focus {
+//   outline: 2px solid #007bff;
+//   /* フォーカス時の見た目 */
+// }
+
+.accordion{
+  text-align: center;
+  margin-top: 80px;
+}
+
+.accordion__content {
+  overflow: hidden;
+  height: 0;
+  transition: height 0.3s ease;
+  /* 高さのアニメーション */
+}
+
+.accordion.is-open .accordion__content {
+  height: auto;
+  /* 開いた時は高さを自動調整 */
+}
+
+.accordion__header {
+  cursor: pointer;
+  padding: 10px 20px;
+  background-color: white;
+  border: 1px solid #333;
+  border-radius: 5px;
+  font-weight: 500;
+  display: inline-block;
+  margin: 0 auto;
+  box-shadow: 0px 4px 4px #00000025;
+font-size: 18px;
+}
+
+.accordion__header:hover {
+  background-color: #e0e0e0;
+}

@@ -1,0 +1,39 @@
+@use "../../foundation/variable" as v;
+@use "../../foundation/mixin" as m;
+
+.p-plus{
+
+  padding: 80px;
+
+  @include m.mq(sp){
+     padding: 40px 0px;
+  }
+
+
+  &__head{
+
+  }
+
+  &__title{
+
+    width: 100%;
+    max-width: 390px;
+    margin: 0 auto;
+
+    img{
+      width: 80%;
+      margin: 0 auto;
+      display: block;
+    }
+
+  }
+
+  &__content{
+    margin-top: 62px;
+    @include m.mq(sp){
+       margin-top: 24px;
+    }
+
+
+  }
+}

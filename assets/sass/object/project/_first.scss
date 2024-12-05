@@ -1,0 +1,284 @@
+@use "../../foundation/variable" as v;
+@use "../../foundation/mixin" as m;
+
+.p-first {
+
+  &__content {
+    overflow-x: clip;
+    background-color: v.$bg-gray;
+    margin-top: 64px;
+    text-align: center;
+    padding-top: 80px;
+
+    @include m.mq(sp) {
+      overflow-x: visible;
+      padding-bottom: 50px;
+      margin-top: 0;
+      padding-top: 40px;
+    }
+
+    ul {
+      max-width: 610px;
+      width: 100%;
+      margin: 30px auto 0;
+
+    }
+
+
+  }
+
+
+
+
+  &__list {
+    text-align: left;
+    list-style: none;
+    position: relative;
+    font-size: 20px;
+    margin-top: 15px;
+
+    @include m.mq(sp) {
+      font-size: 18px;
+    }
+
+
+
+    &::before {
+      position: absolute;
+      content: "";
+      background-image: url(../img/first-li-before.png);
+      width: 32px;
+      height: 32px;
+      background-size: cover;
+      left: -6.5%;
+      top: -10%;
+
+      @include m.mq(sp) {
+        width: 20px;
+        height: 20px;
+        top: 4%;
+      }
+    }
+
+    span {
+      color: v.$font-red;
+    }
+  }
+
+
+
+  &__title {
+
+    position: relative;
+    display: inline-block;
+
+    &:before {
+      content: "";
+      background-image: url(../img/first-before.png);
+      position: absolute;
+      top: 45%;
+      left: -75%;
+      width: 294px;
+      height: 262px;
+      background-size: cover;
+
+      @include m.mq(sp) {
+        display: none;
+      }
+
+    }
+
+    &:after {
+      content: "";
+      background-image: url(../img/first-after.png);
+      position: absolute;
+      top: 3%;
+      right: -65%;
+      width: 294px;
+      height: 262px;
+      background-size: cover;
+
+      @include m.mq(sp) {
+        display: none;
+      }
+
+    }
+
+    h2 {
+
+      font-weight: bold;
+      font-size: 32px;
+      background-color: #fff;
+      border-radius: 999px;
+      display: inline-block;
+      padding: 13px 36px;
+      border: 1px solid #D2D2D2;
+      margin: 0;
+      position: relative;
+
+
+
+      @include m.mq(sp) {
+        font-size: 20px;
+        border: 3px solid #D2D2D2;
+        padding: 11px 36px;
+      }
+
+      &:after{
+        position: absolute;
+        content: "";
+        width: 3px;
+        height: 12px;
+        background-color: #D2D2D2;
+        left: 50%;
+        bottom: -31%;
+        transform: translate-x(-50%);
+      }
+    }
+
+    p {
+      font-size: 40px;
+      font-weight: bold;
+      margin-top: 10px;
+      color: #034A44;
+      line-height: 1.2;
+
+      @include m.mq(sp) {
+        font-size: 24px;
+        margin-top: 15px;
+
+      }
+
+    }
+
+
+  }
+
+  &__second-wrap {
+
+    // background-image: url(../img/second-bg.png);
+    position: relative;
+    width: 100%;
+    max-width: 880px;
+    margin: 0 auto;
+    background-size: cover;
+    padding: 0 100px 120px;
+    background-position: 50% 50%;
+
+    @include m.mq(sp) {
+      padding: 0;
+      // background-image: url(../img/second-bg-sp.png);
+      width: 375px;
+      max-width: 100%;
+
+
+    }
+
+
+
+    img {
+      width: 272px;
+      margin-top: 28px;
+
+      @include m.mq(sp) {
+        margin: 0;
+      }
+    }
+
+
+    ul {
+
+      padding: 0 50px;
+      position: relative;
+      z-index: 1000;
+
+
+      @include m.mq(sp){
+        width: 90%;
+        padding: 0 60px;
+        //  padding: 0;
+      }
+
+
+      li {
+        font-size: 24px;
+        list-style: none;
+        text-align: left;
+        margin-top: 10px;
+        position: relative;
+
+        @include m.mq(sp) {
+          font-size: 18px;
+          line-height: 2;
+        }
+
+        &::before {
+          position: absolute;
+          content: "";
+          background-image: url(../img/second-li-before.png);
+          width: 29px;
+          height: 26px;
+          background-size: cover;
+          left: -6.5%;
+          top: -10%;
+
+          @include m.mq(sp){
+             width: 21px;
+             height: 21px;
+             top: 11%;
+             left: -9.5%;
+          }
+
+
+        }
+
+        span {
+          color: v.$font-red;
+        }
+      }
+
+    }
+  }
+
+
+  &__second-ab-img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    width: 100%;
+
+    img{
+      width: 100%;
+    }
+
+    @include m.mq(sp) {
+      position: absolute;
+      z-index: 111;
+      top: 10%;
+      left: 50%;
+      transform: translatex(-50%);
+      max-width: 375px;
+
+      img{
+        width: 100%;
+      }
+
+    }
+
+  }
+
+}
+
+.first .sp {
+
+  img {
+
+    @include m.mq(sp) {
+      width: 100%;
+      margin: 0 auto;
+      margin-top: 20px;
+    }
+  }
+}
