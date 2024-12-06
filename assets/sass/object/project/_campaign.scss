@@ -17,6 +17,10 @@
     margin: 0 auto;
     margin-top: 40px;
 
+    @include m.mq(sp){
+       margin-top: 80px;
+    }
+
     td{
       padding: 10px;
     }
