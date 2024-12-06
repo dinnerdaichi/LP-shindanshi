@@ -5,6 +5,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+  <link rel="stylesheet" href="https://unpkg.com/scroll-hint@1.1.10/css/scroll-hint.css">
+  <script src="https://unpkg.com/scroll-hint@1.1.10/js/scroll-hint.js"></script>
   <link rel="stylesheet" href="./assets/css/reset.css">
   <link rel="stylesheet" href="./assets/css/style.css">
 
@@ -12484,7 +12487,7 @@
         <h3>スタディングと他社との違い</h3>
       </div>
 
-      <div class="table-container">
+      <div class="table-container js-scrollable">
         <table class="comparison__table01">
           <thead>
             <tr>
@@ -12999,7 +13002,9 @@
   </div>
 
   <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
   <script>
+    new ScrollHint('.js-scrollable');
     const swiper = new Swiper('.swiper', {
       // Optional parameters
       loop: true,
@@ -13103,6 +13108,38 @@
       }
     }
 
+
+
+  </script>
+
+  <script>
+    document.body.style.display = 'none';
+    window.onload = function () {
+      var UserInput = null;
+
+      var cookies = document.cookie;
+      var cookiesArray = cookies.split(';');
+      var pass = 'cGFzcw==';
+
+      for (var c of cookiesArray) {
+        var cArray = c.split('=');
+        if (cArray[0].indexOf('cruw-basic') > -1) {
+          UserInput = decodeURIComponent(cArray[1]);
+        }
+      }
+      if (!(UserInput && UserInput == window.atob(pass))) {
+        UserInput = prompt("パスワードを入力して下さい:", "");
+      }
+
+      if (UserInput != window.atob(pass)) {
+        document.body.innerHTML = "403 Forbidden";
+      } else {
+        var now = new Date();
+        now.setMinutes(now.getMinutes() + 60 * 24 * 3);
+        document.cookie = "cruw-basic=" + encodeURIComponent(UserInput) + ";expires=" + now.toUTCString() + "; path=/;";
+      }
+      document.body.style.display = null;
+    }
   </script>
 
 
