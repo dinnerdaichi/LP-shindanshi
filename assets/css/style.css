@@ -332,7 +332,6 @@ footer {
 }
 @media screen and (max-width:800px) {
   .c-button {
-    padding: 24px 0 20px;
     width: 100%;
   }
 }
