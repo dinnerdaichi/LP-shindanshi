@@ -207,6 +207,7 @@
         text-align: left;
         margin-top: 10px;
         position: relative;
+        font-weight: 500;
 
         @include m.mq(sp) {
           font-size: 18px;
@@ -218,16 +219,16 @@
           content: "";
           background-image: url(../img/second-li-before.png);
           width: 29px;
-          height: 26px;
+          height: 27px;
           background-size: cover;
           left: -6.5%;
-          top: -10%;
+          top: 0%;
 
           @include m.mq(sp){
              width: 21px;
              height: 21px;
              top: 11%;
-             left: -9.5%;
+             left: -10.5%;
           }
 
 

@@ -74,8 +74,8 @@ footer{
 /*リンクを右下に固定*/
 .pagetop {
   position: fixed;
-  right: 3%;
-  bottom: 10%;
+  right: 20px;
+  bottom: 120px;
   z-index: 9999;
   /*はじめは非表示*/
   opacity: 0;

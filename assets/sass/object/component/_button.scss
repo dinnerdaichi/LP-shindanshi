@@ -16,9 +16,10 @@
   }
 
   p {
-    margin-bottom: 50px;
+    margin-bottom: 40px;
     color: v.$bg-red;
     font-size: 18px;
+    font-weight: bold;
 
     @include m.mq(sp){
        font-size: 15px;

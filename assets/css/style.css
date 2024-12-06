@@ -9,6 +9,7 @@ html {
 
 body {
   font-family: "Noto Sans JP", serif;
+  position: relative;
 }
 
 h2 {
@@ -210,8 +211,8 @@ footer {
 /*リンクを右下に固定*/
 .pagetop {
   position: fixed;
-  right: 3%;
-  bottom: 10%;
+  right: 20px;
+  bottom: 120px;
   z-index: 9999;
   /*はじめは非表示*/
   opacity: 0;
@@ -261,9 +262,10 @@ footer {
   }
 }
 .p-button__wrap p {
-  margin-bottom: 50px;
+  margin-bottom: 40px;
   color: #B90000;
   font-size: 18px;
+  font-weight: bold;
 }
 @media screen and (max-width:800px) {
   .p-button__wrap p {
@@ -902,6 +904,7 @@ footer {
   text-align: left;
   margin-top: 10px;
   position: relative;
+  font-weight: 500;
 }
 @media screen and (max-width:800px) {
   .p-first__second-wrap ul li {
@@ -914,17 +917,17 @@ footer {
   content: "";
   background-image: url(../img/second-li-before.png);
   width: 29px;
-  height: 26px;
+  height: 27px;
   background-size: cover;
   left: -6.5%;
-  top: -10%;
+  top: 0%;
 }
 @media screen and (max-width:800px) {
   .p-first__second-wrap ul li::before {
     width: 21px;
     height: 21px;
     top: 11%;
-    left: -9.5%;
+    left: -10.5%;
   }
 }
 .p-first__second-wrap ul li span {
