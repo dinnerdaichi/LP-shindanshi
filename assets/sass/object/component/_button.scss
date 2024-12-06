@@ -108,6 +108,7 @@
   @include m.mq(sp){
     //  padding: 24px 0 20px;
      width: 100%;
+     max-width: 346px;
   }
 
   &::before {

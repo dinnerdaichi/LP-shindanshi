@@ -333,6 +333,7 @@ footer {
 @media screen and (max-width:800px) {
   .c-button {
     width: 100%;
+    max-width: 346px;
   }
 }
 .c-button::before {
