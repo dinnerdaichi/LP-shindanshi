@@ -2234,7 +2234,7 @@ span.relative::after {
 }
 @media screen and (max-width:800px) {
   .p-campaign table {
-    margin-top: 80px;
+    margin-top: 40px;
   }
 }
 .p-campaign table td {
@@ -2324,6 +2324,7 @@ span.relative::after {
   -webkit-transition: height 0.3s ease;
   transition: height 0.3s ease;
   /* 高さのアニメーション */
+  margin-top: 40px;
 }
 
 .accordion.is-open .accordion__content {
