@@ -62,7 +62,7 @@
     padding: 28px 21px;
 
     @include m.mq(sp){
-       padding: 14px 8px;
+       padding: 10px 8px;
     border-radius: 15px;
     margin-top: 0px;
     }
@@ -72,6 +72,7 @@
       font-weight: bold;
       text-align: right;
       color: #0B716A;
+      line-height: 1.44;
 
       @include m.mq(sp){
          font-size: 18px;
@@ -93,9 +94,12 @@
   &__text{
     margin-top: 50px;
     font-size: 18px;
+    font-weight: normal;
+    line-height: 1.44;
 
     @include m.mq(sp){
        margin-top: 24px;
+       letter-spacing: 0.4px;
     }
 
     p{
@@ -104,6 +108,7 @@
       span{
         color: v.$font-red;
         line-height: 1.4;
+        font-weight: bold;
       }
     }
   }

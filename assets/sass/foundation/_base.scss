@@ -36,6 +36,14 @@ li{
   }
 }
 
+.tab{
+  display: none;
+
+  @include m.mq(tab) {
+    display: block;
+  }
+}
+
 .pc{
   display: block;
 

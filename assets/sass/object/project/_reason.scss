@@ -19,6 +19,7 @@
     margin-top: 60px;
     padding: 56px 90px 0px;
     border-radius: 10px;
+    color: #333;
 
     @include m.mq(tab) {
       padding: 20px;
@@ -224,10 +225,12 @@
     font-weight: bold;
     text-align: center;
     padding: 21px;
+    color: #333;
 
     @include m.mq(sp){
        font-size: 20px;
        padding: 16px;
+       line-height: 1.4;
     }
 
     span {

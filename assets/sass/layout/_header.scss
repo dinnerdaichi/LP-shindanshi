@@ -16,10 +16,12 @@ main{
   width: 100%;
   background: white;
   z-index: 1001;
+  box-shadow: 0 0.6rem 0.6rem rgba(0, 0, 0, 0.1);
 
   @include m.mq(sp){
      padding: 7px 15px;
      position: relative;
+
   }
 }
 
@@ -54,7 +56,7 @@ main{
 .header__button{
 
   background-color: #B90000;
-  border-radius:10px ;
+  border-radius:5px ;
   margin-right: 10px;
 
   &:last-child{
@@ -63,10 +65,14 @@ main{
 
   a{
     color: white;
-    font-size: 18px;
+    font-size: 14px;
     font-weight: bold;
-    padding: 8px 40px;
+    padding: 8px 30px 10px;
     display: block;
+    height: 45px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
     @include m.mq(sp){
        font-size: 12px;

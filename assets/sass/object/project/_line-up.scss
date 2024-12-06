@@ -59,6 +59,7 @@
     justify-content: center;
     margin-top: 36px;
     align-items: end;
+    padding: 0;
 
     @include m.mq(sp){
        display: block;
@@ -70,10 +71,14 @@
   &__item{
     text-align: center;
     margin-right:20px ;
+    width: 30%;
+    max-width: 345px;
 
     @include m.mq(sp){
        margin-right: 0;
        margin-top: 24px;
+       width: 100%;
+       max-width: 100%;
     }
 
     &:last-child{
@@ -97,10 +102,14 @@
               width: 100%;
               max-width: 200px;
               height: 57px;
-              top: 3%;
+              top: -9%;
               z-index: 999;
               -webkit-transform: translateX(-50%);
               transform: translateX(-50%);
+
+              @include m.mq(sp){
+                 top: 3%;
+              }
 
         }
       }
@@ -115,7 +124,9 @@
   }
 
   &__item-head{
-    font-size: 18px;
+    font-size: 17px;
     font-weight: bold;
+    line-height: 1.4;
+
   }
 }
