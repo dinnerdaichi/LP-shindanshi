@@ -1,4 +1,4 @@
-pa<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="ja">
 <head>
   <meta charset="UTF-8">
@@ -11830,10 +11830,18 @@ pa<!DOCTYPE html>
                   <div class="p-reason__item-text">
                     <p>人による添削ではどうしても数日かかりますが、AI添削ならすぐに返答がくるので、<span>勉強の手を止めることなく改善</span>できます。</p>
                     <p><span>くり返し添削もできる</span>ので、満足いくまで答案をブラッシュアップすることができます。</p>
+                    <p class="reason-caution">
+                      ※AI添削が受けられるのはパーフェクトコースのみとなります。
+                    </p>
                   </div>
                 </div>
                 <div class="p-reason__item-right">
-                  <img src="./assets/img/reason-item-img-03.png" alt="">
+                  <picture>
+                    <!-- sourceに画像のパスを記述 画面に表示されるのはsrcsetの画像-->
+                    <source srcset="./assets/img/reason-item-img-03-sp.png" media="(max-width:800px)">
+                    <!-- imgに画像のパスを記述 -->
+                    <img src="./assets/img/reason-item-img-03.png" alt="代替テキスト">
+                  </picture>
                 </div>
               </div>
             </li>
@@ -12073,9 +12081,9 @@ pa<!DOCTYPE html>
               <p>Point03</p>
             </div>
             <div class="p-reason__head-title">
-              <p>いつでもどこでもスキマ時間で勉強ができる</p>
+              <p>いつでもどこでも<br class="sp">スキマ時間で勉強ができる</p>
             </div>
-            <div class="p-reason__head-img">
+            <div class="p-reason__head-img point03">
               <picture>
                 <!-- sourceに画像のパスを記述 画面に表示されるのはsrcsetの画像-->
                 <source srcset="./assets/img/reason-head-img-sp.png" media="(max-width:800px)">
@@ -12097,7 +12105,7 @@ pa<!DOCTYPE html>
               <div class="p-reason__item-title">
                 スマホに最適化された<br class="sp">見やすい講義動画
               </div>
-              <div class="p-reason__item-img">
+              <div class="p-reason__item-img smart">
                 <picture>
                   <!-- sourceに画像のパスを記述 画面に表示されるのはsrcsetの画像-->
                   <source srcset="./assets/img/reason-point03-item-sp.png" media="(max-width:800px)">
@@ -12890,25 +12898,25 @@ pa<!DOCTYPE html>
           </div>
         </div>
 
-        <div class="p-campaign__img">
-          <picture>
-            <!-- sourceに画像のパスを記述 画面に表示されるのはsrcsetの画像-->
-            <source srcset="./assets/img/campaign-img02-sp.png" media="(max-width:800px)">
-            <!-- imgに画像のパスを記述 -->
-            <img src="./assets/img/campaign-img02.png" alt="代替テキスト">
-          </picture>
+
+      </div>
+      <div class="p-campaign__img">
+        <picture>
+          <!-- sourceに画像のパスを記述 画面に表示されるのはsrcsetの画像-->
+          <source srcset="./assets/img/campaign-img02-sp.png" media="(max-width:800px)">
+          <!-- imgに画像のパスを記述 -->
+          <img src="./assets/img/campaign-img02.png" alt="代替テキスト">
+        </picture>
+      </div>
+
+
+      <div class="p-button__wrap">
+        <p>\　無料登録で実力お試し診断が受けられる！　/</p>
+        <div class="c-button">
+          <a href="https://studying.jp/shindanshi/trial_proficiency_test.html" target="_blank">
+            初回講座を無料お試し
+          </a>
         </div>
-
-
-        <div class="p-button__wrap">
-          <p>\　無料登録で実力お試し診断が受けられる！　/</p>
-          <div class="c-button">
-            <a href="https://studying.jp/shindanshi/trial_proficiency_test.html" target="_blank">
-              初回講座を無料お試し
-            </a>
-          </div>
-        </div>
-
       </div>
 
     </section>

@@ -27,6 +27,8 @@
 
     @include m.mq(sp){
        padding: 20px 15px;
+       margin-top: 24px;
+
     }
   }
   &__content.second {
@@ -140,6 +142,7 @@
 
     @include m.mq(sp){
        font-size: 23px;
+       padding: 8px 24px;
     }
 
   }
@@ -247,6 +250,7 @@
          display: block;
          width: 60%;
          margin: 0 auto 10px;
+        padding: 5px 35px 5px 15px;
       }
 
       &::after {
@@ -364,7 +368,7 @@
     font-weight: normal;
 
     @include m.mq(sp){
-       margin-top: 40px;
+       margin-top: 20px
     }
 
     p {
@@ -373,7 +377,7 @@
 
       @include m.mq(sp){
          font-size: 18px;
-         margin-top: 30px;
+         margin-top: 10px;
       }
 
       span {
@@ -391,7 +395,7 @@
 
 
 .p-reason__head-wrap.second {
-  margin-top: 50px;
+  // margin-top: 50px;
 
   @include m.mq(sp){
      margin-top: 0;
@@ -409,6 +413,20 @@
     }
   }
 }
+
+.p-reason__head-img.point03{
+
+  @include m.mq(sp){
+     margin-top: 24px;
+  }
+}
+.p-reason__item-img.smart{
+
+  @include m.mq(sp){
+     margin-top: 24px;
+  }
+}
+
 
 .p-reason__content.point03 {
 
@@ -496,4 +514,10 @@
   @include m.mq(sp){
      padding: 0;
   }
+}
+
+.p-reason__item-text p.reason-caution{
+  font-size: 14px;
+  color: #000000;
+  margin-top: 20px;
 }

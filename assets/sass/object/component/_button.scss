@@ -128,7 +128,10 @@
     width: 252px;
 
     @include m.mq(sp){
-       font-size: 14px;
+      font-size: 14px;
+      padding: 5px 0px;
+      width: 232px;
+
     }
 
 
@@ -169,6 +172,8 @@
 
     @include m.mq(sp) {
       font-size: 18px;
+      padding: 24px 35px;
+
     }
 
   }

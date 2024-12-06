@@ -57,9 +57,9 @@
 
   &__head{
     background-color: #fff;
-    border-radius: 30px;
+    border-radius: 20px;
     border: 4.5px solid #0B716A ;
-    padding: 28px 21px;
+    padding: 8px 21px;
 
     @include m.mq(sp){
        padding: 10px 8px;
@@ -116,10 +116,12 @@
   &__left{
     width: 50%;
     max-width: 425px;
+    margin-top: 40px;
 
     @include m.mq(sp){
        width: 100%;
        padding: 15px;
+       margin-top: 0;
     }
   }
   &__right{

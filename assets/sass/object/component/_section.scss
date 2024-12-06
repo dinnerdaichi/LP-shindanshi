@@ -18,7 +18,9 @@
     color: #0B716A;
 
     @include m.mq(sp){
-       font-size: 18px;
+      font-size: 18px;
+      padding: 0px 20px;
+
     }
   }
   h2{
